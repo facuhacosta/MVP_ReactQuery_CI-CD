@@ -5,7 +5,7 @@ on:
     branches: [develop, main]
 
 jobs: 
-  set-env:
+  execute-test:
     name: set up job
     runs-on: ubuntu-latest
 
@@ -15,10 +15,4 @@ jobs:
         with: 
           node-version: 18
       - run: npm ci
-
-  run-tests:
-    name: Run Tests
-    runs-on: ubuntu-latest
-
-    steps:
       - run: npm run test:cov
