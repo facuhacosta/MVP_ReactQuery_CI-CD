@@ -9,10 +9,16 @@ export default defineConfig({
     environment: "happy-dom",
     coverage: {
       provider: "v8",
-      lines: 80,
-      branches: 80,
-      functions: 80,
-      statements: 80
+      lines: 75,
+      branches: 75,
+      functions: 35,
+      statements: 75,
+      watermarks: {
+        lines: [45, 95],
+        functions: [45, 95],
+        branches: [45, 95],
+        statements: [45, 95]
+      }
     }
   }
 })

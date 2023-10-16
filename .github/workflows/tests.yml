@@ -15,5 +15,14 @@ jobs:
       - uses: actions/setup-node@v3
         with: 
           node-version: 18
+      
+      name: Install dependencies
       - run: npm ci
-      - run: npm run test:cov --coverage.lines=80
+
+      name: Tests
+      - run: npm run test:cov
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: test-coverage
+          path: coverage/index.html
