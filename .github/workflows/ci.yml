@@ -32,9 +32,3 @@ jobs:
         with:
           name: test-coverage
           path: coverage
-
-      - name: Deploy
-        if: ${{ github.event_name == 'push' }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist
