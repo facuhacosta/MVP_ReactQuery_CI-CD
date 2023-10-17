@@ -26,10 +26,6 @@ jobs:
   deploy:
     environment:
       name: github-pages
-<<<<<<< HEAD:.github/workflows/deploy.yml
-=======
-      url: ${{ steps.deployment.outputs.page_url }}
->>>>>>> af3f72930f74ebb69e14b3d78b1610e7cb0502a1:.github/workflows/static.yml
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,15 +38,5 @@ jobs:
         run: |
           npm ci
           npm run build
-<<<<<<< HEAD:.github/workflows/deploy.yml
-=======
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: 'dist'
->>>>>>> af3f72930f74ebb69e14b3d78b1610e7cb0502a1:.github/workflows/static.yml
       - name: Deploy to GitHub Pages
         run: npx gh-pages -d dist
