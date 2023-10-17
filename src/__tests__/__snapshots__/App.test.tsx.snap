@@ -10,7 +10,7 @@ exports[`App test > Sould match snapshot 1`] = `
       <img
         alt="Vite logo"
         class="logo"
-        src="/vite.svg"
+        src="/MVP_ReactQuery_CI-CD/vite.svg"
       />
     </a>
     <a
@@ -20,7 +20,7 @@ exports[`App test > Sould match snapshot 1`] = `
       <img
         alt="React logo"
         class="logo react"
-        src="/src/assets/react.svg"
+        src="/MVP_ReactQuery_CI-CD/src/assets/react.svg"
       />
     </a>
   </div>
