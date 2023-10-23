@@ -17,7 +17,7 @@ export default defineConfig({
       watermarks: {
         lines: [45, 95],
         functions: [45, 95],
-        branches: [45, 95],
+        branches: [45, 55],
         statements: [45, 95]
       }
     }
