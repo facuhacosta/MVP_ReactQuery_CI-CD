@@ -26,11 +26,11 @@ function App() {
   console.log(data);
   
   const [count, setCount] = useState(0)
-  const [comics, setComics] = useState(Array<any>)
+  // const [comics, setComics] = useState(Array<any>)
 
-  useEffect(() => {
-    console.log(comics);
-  }, [comics])
+  // useEffect(() => {
+  //   console.log(comics);
+  // }, [comics])
   return (
     <>
       <div>
