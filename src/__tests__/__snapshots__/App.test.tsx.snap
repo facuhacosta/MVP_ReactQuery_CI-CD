@@ -46,5 +46,8 @@ exports[`App test > Sould match snapshot 1`] = `
   >
     Click on the Vite and React logos to learn more
   </p>
+  <div>
+    Loading ...
+  </div>
 </DocumentFragment>
 `;
