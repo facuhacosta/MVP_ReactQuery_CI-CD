@@ -16,11 +16,12 @@ const fetchUsers = async () => {
 }
 
 function App() {
-  const {isLoading, isError, data} = useQuery(
-    ['comics'],
-    async () => {
+  const {isLoading, isError, data} = useQuery({
+    queryKey: ['comics'],
+    queryFn: async () => {
       await fetchUsers()
     }
+  }
   )
 
   console.log(data);
