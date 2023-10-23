@@ -28,7 +28,7 @@ jobs:
         run: bun run test:cov -- -u
 
       - name: Build
-        run: bun build ./src/main.tsx --outdir ./dist --analyze
+        run: bun build ./src/index.html --outdir ./dist --analyze
 
       - uses: actions/upload-artifact@v3
         with:
