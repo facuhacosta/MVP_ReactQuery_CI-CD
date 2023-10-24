@@ -1,4 +1,4 @@
-name: CI
+name: CI BUN
 
 on:
   pull_request:
@@ -6,15 +6,12 @@ on:
 
 jobs: 
   
-  test-cov:
-    name: Code Quality
+  code-quality-bun:
+    name: Code Quality BUN
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
       - uses: oven-sh/setup-bun@v1
         with: 
           bun-version: 1.0.0
@@ -34,3 +31,24 @@ jobs:
         with:
           name: test-coverage
           path: coverage
+  
+  code-quality-npm: 
+    name: Code Quality NPM
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci # --no-audit --no-fund --no-optional
+
+      - name: Linter
+        run: npm run lint
+
+      - name: Tests
+        run: npm run test:cov -- -u
+
+      - name: Build
+        run: npm run build
