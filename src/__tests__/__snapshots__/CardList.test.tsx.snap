@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App test > Sould Render Character 1`] = `
+<DocumentFragment>
+  <div
+    class="_container_5ea73b"
+  >
+    <div
+      class="_container_d75732"
+    >
+      <div
+        class="_imageContainer_d75732"
+      >
+        <img
+          alt=""
+          src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+        />
+      </div>
+      <section>
+        <h3>
+          3-D Man
+        </h3>
+      </section>
+      <ol>
+        <li>
+          Avengers: The Initiative (2007) #14
+        </li>
+        <li>
+          Avengers: The Initiative (2007) #15
+        </li>
+        <li>
+          Marvel Premiere (1972) #35
+        </li>
+      </ol>
+    </div>
+    <p>
+      Is Loading ...
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App test > Sould show loading 1`] = `
+<DocumentFragment>
+  <div
+    class="_container_5ea73b"
+  >
+    <div
+      class="_container_d75732"
+    >
+      <div
+        class="_imageContainer_d75732"
+      >
+        <img
+          alt=""
+          src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+        />
+      </div>
+      <section>
+        <h3>
+          3-D Man
+        </h3>
+      </section>
+      <ol>
+        <li>
+          Avengers: The Initiative (2007) #14
+        </li>
+        <li>
+          Avengers: The Initiative (2007) #15
+        </li>
+        <li>
+          Marvel Premiere (1972) #35
+        </li>
+      </ol>
+    </div>
+    <p>
+      Is Loading ...
+    </p>
+  </div>
+</DocumentFragment>
+`;

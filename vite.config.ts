@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { configDefaults } from 'vitest/dist/config.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,7 +20,13 @@ export default defineConfig({
         functions: [45, 95],
         branches: [45, 95],
         statements: [45, 95]
-      }
-    }
+      },
+      exclude: [
+        '**/assets/**'
+      ]
+    },
+    exclude: [
+      ...configDefaults.exclude
+    ]
   }
 })
