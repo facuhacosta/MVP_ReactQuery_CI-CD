@@ -1,4 +1,4 @@
-type Character = {
+export type Character = {
   name: string
   thumbnail: {
     path: string

@@ -38,7 +38,7 @@ describe("App test", () => {
   it("Sould Render Character", async () => {
 
     vi.mock('@tanstack/react-query', async () => {
-      const actual: {} = await vi.importActual('@tanstack/react-query')
+      const actual: object = await vi.importActual('@tanstack/react-query')
       return {
         ...actual,
         useQuery: vi.fn().mockReturnValueOnce({ data: mocks.characters, isLoading: false, error: {} }),
@@ -59,7 +59,7 @@ describe("App test", () => {
   it("Sould show loading", async () => {
 
     vi.mock('@tanstack/react-query', async () => {
-      const actual: {} = await vi.importActual('@tanstack/react-query')
+      const actual: object = await vi.importActual('@tanstack/react-query')
       return {
         ...actual,
         useQuery: vi.fn().mockReturnValue({ data: mocks.characters, isLoading: true, error: {} }),

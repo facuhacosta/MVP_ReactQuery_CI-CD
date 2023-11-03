@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query"
 import { fetchUsers } from "../../assets/utils"
 import Card from "../Card/Card"
 import styles from "./CardList.module.scss"
+import { Character } from "../../assets/types"
 
 const CardList = () => {
   const { isLoading, isError, data: characters = [] } = useQuery({

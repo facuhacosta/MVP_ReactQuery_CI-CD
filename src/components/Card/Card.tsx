@@ -1,3 +1,4 @@
+import { Character } from "../../assets/types"
 import styles from "./Card.module.scss"
 
 const Card = ({character}:{character: Character}) => {  
